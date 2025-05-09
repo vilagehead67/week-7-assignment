@@ -69,7 +69,7 @@ app.post("/add-found-item", async(req, res) =>{
     })
 })
 
-// view all unclaimed
+// view all unclaimed items
 app.get("/unclaimed-items", async(req,res) => {
     
     const allItems = await Item.find({
